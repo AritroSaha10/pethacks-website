@@ -8,6 +8,7 @@ import Sponsors, { SponsorList, SponsorData } from '@components/Home/Sponsors'
 import Hero from '@components/Home/Hero'
 
 import Navbar from "@components/Navbar"
+import About from '@components/Home/About'
 
 interface HomeProps {
   faq: FrequentlyAskedQuestion[],
@@ -39,6 +40,7 @@ const Home: NextPage<HomeProps> = ({ faq, sponsors }) => {
     <Layout name="Home" noNavbar>
       <Hero />
       <Navbar />
+      <About />
       <FAQ faq={faq} />
       <Sponsors sponsors={sponsors} />
     </Layout>
