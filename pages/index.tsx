@@ -5,6 +5,9 @@ import FAQ, { FrequentlyAskedQuestion } from "@components/Home/FAQ"
 
 import { getAllDocuments } from "@lib/sanity/util"
 import Sponsors, { SponsorList, SponsorData } from '@components/Home/Sponsors'
+import Hero from '@components/Home/Hero'
+
+import Navbar from "@components/Navbar"
 
 interface HomeProps {
   faq: FrequentlyAskedQuestion[],
@@ -33,7 +36,9 @@ export async function getStaticProps({ preview = false }) {
 
 const Home: NextPage<HomeProps> = ({ faq, sponsors }) => {
   return (
-    <Layout name="Home">
+    <Layout name="Home" noNavbar>
+      <Hero />
+      <Navbar />
       <FAQ faq={faq} />
       <Sponsors sponsors={sponsors} />
     </Layout>

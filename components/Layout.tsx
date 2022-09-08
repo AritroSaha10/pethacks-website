@@ -14,7 +14,7 @@ const contentVariants = {
     transition: { duration: 0.4, ...transition }
 }
 
-export default function Layout({ name, children, noAnim }: { name: string, children: any, noAnim?: boolean }) {
+export default function Layout({ name, children, noAnim, noNavbar }: { name: string, children: any, noAnim?: boolean, noNavbar?: boolean }) {
     const title = `${name} | PetHacks`;
     const description = "WEBSITE DESCRIPTION";
     const imageSrc = "CHANGE ME"
@@ -40,7 +40,7 @@ export default function Layout({ name, children, noAnim }: { name: string, child
                 <meta property="twitter:image:src" content={imageSrc} />
             </Head>
 
-            <Navbar />
+            {noNavbar ? <></> : <Navbar />}
 
             {noAnim ? (
                 <div
