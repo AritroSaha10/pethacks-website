@@ -1,4 +1,4 @@
-import {useRef} from "react"
+import { useRef } from "react"
 import Image from 'next/image'
 import { m, useInView } from "framer-motion"
 
@@ -7,13 +7,13 @@ import Logo from "@media/logo.png"
 export default function About() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
-    
+
     return (
         <m.section
-      initial={{ opacity: 0, y:100 }}
-      animate={{ opacity: 1, y:0, transition: { duration: 1.5 } }}
-      exit={{ opacity: 0, transition: { duration: 0.5 } }}>
-            <section className="flex p-10 flex-col items-center lg:flex-row lg:p-20 xl:px-40 items-left bg-orange-200 gap-6 z-[30] py-0" id="about">
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
+            exit={{ opacity: 0, transition: { duration: 0.5 } }}>
+            <section className="flex p-10 flex-col items-center lg:flex-row lg:p-20 xl:px-40 items-left bg-orange-200 gap-6 z-[30] py-0 svg-background" id="about">
                 <div
                     className="flex flex-col items-center lg:items-start w-4/5 text-center lg:text-left mb-4 lg:mb-0 font-bold"
                 >
@@ -24,7 +24,7 @@ export default function About() {
                         We welcome all highschool students and beyond, to join us at the hackathon on [date].                </p>
                 </div>
 
-                <div 
+                <div
                     className="flex p-0 m-0 w-1/2 md:w-1/4 pb-8 transition duration-500 hover:scale-125"
                 >
                     <div className='flex ring-8 ring-pet-teal rounded-full'>

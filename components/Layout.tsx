@@ -54,7 +54,7 @@ export default function Layout({ name, children, noAnim, noNavbar }: { name: str
                     animate={contentVariants.animate}
                     exit={contentVariants.exit}
                     transition={contentVariants.transition}
-                    className="flex-grow flex flex-col"
+                    className="flex-grow flex flex-col svg-background"
                 >
                     {children}
                 </m.div>
