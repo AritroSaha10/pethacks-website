@@ -5,7 +5,7 @@ import SectionHead from "@components/SectionHead"
 
 export default function Prizes(){
     return ( 
-    <Layout name="Prizes" noNavbar>
+    <Layout name="prizes" noNavbar>
       <Navbar />
       <SectionHead title="Prizes" subtitle="Compete in our hackathon to win over $200K in prizes!"/>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-3">
