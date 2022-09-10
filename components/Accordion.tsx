@@ -41,14 +41,14 @@ const Accordion: FC<Props> = ({ title, content }) => {
     return (
         <div className="p-4 border-2 border-white/50 relative mt-[-2px] w-full text-white">
             <button className="flex justify-between items-center w-full" onClick={handleToggle}>
-                <p className="text-left text-xl font-semibold">{title}</p>
+                <p className="text-left text-2xl font-semibold">{title}</p>
                 <m.span variants={arrowVariants} initial="closed" animate={controls}>
                     <BiChevronLeft />
                 </m.span>
             </button>
 
             <m.p
-                className="text-md overflow-hidden text-gray-100"
+                className="text-lg overflow-hidden text-gray-100"
                 variants={contentVariants}
                 animate={controls}
                 initial="closed"

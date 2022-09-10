@@ -13,7 +13,7 @@ export default function About() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
             exit={{ opacity: 0, transition: { duration: 0.5 } }}>
-            <section className="flex p-10 flex-col items-center lg:flex-row lg:p-20 xl:px-40 items-left bg-orange-200 gap-6 z-[30] py-0 svg-background" id="about">
+            <section className="flex p-10 flex-col items-center lg:flex-row lg:p-20 xl:px-40 items-left bg-orange-200 gap-6 z-[30] py-0 wiggles-background" id="about">
                 <div
                     className="flex flex-col items-center lg:items-start w-4/5 text-center lg:text-left mb-4 lg:mb-0 font-bold"
                 >

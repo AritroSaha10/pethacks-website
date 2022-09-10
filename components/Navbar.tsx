@@ -47,7 +47,7 @@ export default function Header() {
             <div className="container px-4 mx-auto lg:flex lg:items-center">
                 <div className="flex justify-between items-center">
                     <Link href="/">
-                        <a className="flex justify-between items-center font-bold text-xl text-white gap-2">
+                        <a className="flex justify-between items-center font-bold text-2xl text-white gap-2">
                             <Image src={Logo} alt="logo" width={50} height={50} />
                             <span>PetHacks</span>
                         </a>
@@ -66,7 +66,7 @@ export default function Header() {
                     </button>
                 </div>
 
-                <div className={`${showDropdown ? "flex" : "hidden"} lg:flex flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0`} data-test-id="navbar">
+                <div className={`${showDropdown ? "flex" : "hidden"} lg:flex flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0 text-xl`} data-test-id="navbar">
                     {
                         links.map(({ name, link, priority, id }) =>
                             <Link key={name} href={link}>

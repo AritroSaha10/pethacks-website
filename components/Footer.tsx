@@ -64,15 +64,15 @@ export default function Footer() {
         <footer className="flex flex-col justify-between gap-4 px-12 lg:px-20 py-8 bg-pet-teal items-center z-[99999999] text-center sm:text-left">
 
             <div className="flex flex-col items-center lg:w-1/3" id="newsletter">
-                <h2 className="text-2xl text-white">Newsletter</h2>
-                <p className="text-md text-emerald-500">
+                <h2 className="text-4xl text-white underline">newsletter</h2>
+                <p className="text-xl text-emerald-500">
                     Sign up to our newsletter to stay connected!
                 </p>
 
                 <div>
                     <form className="flex flex-col sm:flex-row items-center gap-2 mt-4 text-center lg:text-left" onSubmit={handleSubmit} noValidate>
                         <input
-                            className={`rounded-lg py-2 px-3 w-60 sm:w-72 align-middle text-white outline-none focus:ring-2 focus:ring-emerald-700 duration-200 bg-white/20 shadow-lg focus:shadow-none ${emailState == EmailState.Invalid && "ring-1 ring-red-600"}`}
+                            className={`text-lg rounded-lg py-2 px-3 w-60 sm:w-72 align-middle text-white outline-none focus:ring-2 focus:ring-emerald-700 duration-200 bg-white/20 shadow-lg focus:shadow-none ${emailState == EmailState.Invalid && "ring-1 ring-red-600"}`}
                             placeholder="Your email address"
                             name="email"
                             type="email"
@@ -81,7 +81,7 @@ export default function Footer() {
                         />
                         <input
                             type="submit"
-                            className={`rounded-lg py-2 px-4 w-60 sm:w-auto text-md ${buttonColoring} hover:cursor-pointer`}
+                            className={`rounded-lg py-2 px-4 w-60 sm:w-auto text-lg ${buttonColoring} hover:cursor-pointer`}
                         />
                     </form>
 
@@ -99,7 +99,7 @@ export default function Footer() {
 
             <hr className="h-px bg-white w-full lg:w-[40%] my-3" />
 
-            <div className="flex items-center gap-3 text-4xl">
+            <div className="flex items-center justify-center gap-3 text-4xl">
                 <a
                     href=""
                     className="text-[#0A66C2] hover:text-[#0A66C2]/75 active:text-[#0A66C2]/50 duration-200"
@@ -133,7 +133,7 @@ export default function Footer() {
 
             <hr className="h-px bg-white w-full lg:w-[40%] my-3" />
 
-            <p className='text-md text-gray-200 font-sans'>
+            <p className='text-lg text-gray-200'>
                 Made with Next.js, Tailwind, and 💙 by
                 {" "}
                 <a href="https://aritrosaha.vercel.app" target="_blank" rel="noreferrer" className='text-blue-300 hover:text-blue-500 duration-150'>
