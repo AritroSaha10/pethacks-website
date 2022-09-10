@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        desc:['Gaegu', 'cursive;']
+      },
       colors: {
         "pet-teal": "#264653",
         "pet-turquoise": "#2A9D8F",
