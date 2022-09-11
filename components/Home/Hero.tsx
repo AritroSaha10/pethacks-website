@@ -6,17 +6,17 @@ import Link from "next/link"
 
 export default function Hero() {
     return (
-        <div className="h-screen relative">
+        <div className="h-[55vw] relative">
             <Image
                 src={HeroImage}
                 placeholder="blur"
                 alt="Hero Image"
-                className="absolute"
+                className="absolute selectDisable"
                 quality={100}
                 priority
             />
 
-            <div className="relative h-screen w-full">
+            <div className="relative">
                 {/* 
                 Top 10 reasons why I hate web development, by Aritro
                 #1: This. The styling. Using viewport width for everything. The font size, the top position, everything. THIS WORKS!!!
@@ -30,7 +30,7 @@ export default function Hero() {
                 </div>
 
                 <Link href="/sign-up">
-                    <a className="text-[4vw] top-[40vw] left-[14vw] absolute bg-teal-700 text-white px-14 -rotate-3 rounded-3xl hover:shadow-xl active:bg-teal-900 duration-150 transition-all">
+                    <a className="text-[4vw] top-[40vw] left-[12vw] lg:left-[14vw] absolute bg-teal-700 text-white px-4 md:px-8 lg:px-14 -rotate-3 rounded-3xl hover:shadow-xl active:bg-teal-900 duration-150 transition-colors">
                         Sign up
                     </a>
                 </Link>
