@@ -30,7 +30,7 @@ export default function Hero() {
                 </div>
 
                 <Link href="/sign-up">
-                    <a className="text-[4vw] top-[40vw] left-[12vw] lg:left-[14vw] absolute bg-teal-700 text-white px-4 md:px-8 lg:px-14 -rotate-3 rounded-3xl hover:shadow-xl active:bg-teal-900 duration-150 transition-colors">
+                    <a className="text-[4vw] top-[40vw] left-[12vw] lg:left-[14vw] absolute bg-teal-700 text-white px-4 md:px-8 lg:px-14 -rotate-3 rounded-3xl hover:shadow-xl active:bg-teal-900 duration-150 transition-shadows">
                         Sign up
                     </a>
                 </Link>
