@@ -5,7 +5,12 @@ const nextConfig = {
   images: {
     domains: [
       "i.imgur.com"
-    ]
+    ],
+  },
+  experimental: {
+    images: {
+      allowFutureImage: true
+    }
   }
 }
 
