@@ -40,27 +40,27 @@ export default function Timer() {
 
     return (
 
-    <div className = 'border-2 p-10 rounded-xl flex-col'>
-        <div className = ' p-9 text-4xl font-bold text-center '>COUNTDOWN</div>
-        <div className = 'display-flex text-center'>
-            <div className = ''>
+    <div className = 'border-2 p-10 rounded-xl'>
+        <div className = ' p-9 text-5xl font-bold text-center underline'>countdown</div>
+        <div className = 'text-center flex flex-row p-4'>
+            <div className = 'p-4'>
                 <span className = 'time'>{days}</span>
-                <span className = 'label'> Days</span>
+                <span className = 'label'> Days </span>
             </div>
 
-            <div className = 'timer-segment'>
+            <div className = 'p-4'>
                 <span className = 'time'>{hours}</span>
-                <span className = 'label'> Hours</span>
+                <span className = 'label'> Hours </span>
             </div>
             
-            <div className = 'timer-segment'>
-                <span className = 'time'>{minutes}</span>
-                <span className = 'label'> Minutes</span>
+            <div className = 'p-4'>
+                <span className = 'time'> {minutes} </span>
+                <span className = 'label'> Minutes </span>
             </div>
 
-            <div className = 'timer-segment'>
+            <div className = 'p-4'>
                 <span className = 'time'>{seconds}</span>
-                <span className = 'label'> Seconds</span>
+                <span className = 'label'> Seconds </span>
             </div>
         </div>
 

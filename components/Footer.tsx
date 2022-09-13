@@ -8,7 +8,7 @@ import EmailRegex from '@util/EmailRegex'
 
 import logo from '@media/logo.png'
 import InstagramLogo from "@media/ig.png"
-import { FaLinkedin, FaDiscord } from 'react-icons/fa'
+import { FaLinkedin, FaDiscord, FaInstagram } from 'react-icons/fa'
 
 const buttonColoring =
     'bg-emerald-700 text-white hover:bg-white hover:text-emerald-700 active:bg-emerald-500 active:text-white transition-all duration-300'
@@ -122,12 +122,12 @@ export default function Footer() {
 
                 <a
                     href=""
-                    className="text-[#F77737] hover:text-[#F77737]/75 active:text-[#F77737]/50 duration-200"
+                    className=" text-[#fff] hover:text-[#F77737]/75 active:text-[#F77737]/50 duration-200 bg-gradient-to-r from-[#B706E0] via-[#F5BD01] to-[#F5008E] rounded-lg"
                     target="_blank"
                     rel="noreferrer"
                     title="Instagram"
                 >
-                    <Image src={InstagramLogo} width={30} height={30} alt="instagram" />
+                    <FaInstagram/>
                 </a>
             </div>
 
