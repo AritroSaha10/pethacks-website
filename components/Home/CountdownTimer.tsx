@@ -38,29 +38,70 @@ export default function CountdownTimer() {
   }, []);
 
   return (
-    <div className="border-2 p-10 rounded-xl">
+    <div className="flex flex-col items-center border-2 p-10 rounded-xl">
       <div className=" p-9 text-5xl font-bold text-center underline">
         countdown
       </div>
-      <div className="text-center flex flex-row p-4">
-        <div className="p-4">
-          <span className="time">{days}</span>
-          <span className="label"> Days </span>
+
+      <div className="flex flex-row text-center p-4 text-white font-bold text-5xl gap-12 flex-wrap items-center justify-center">
+        <div className="flex flex-col items-center">
+          <div className="flex gap-2">
+            {days
+              .toString()
+              .split("")
+              .map((char: string, i: number) => (
+                <div className="p-4 bg-pet-teal rounded-lg" key={`days-${i}`}>
+                  <span>{char}</span>
+                </div>
+              ))}
+          </div>
+
+          <span className="text-slate-800">days</span>
         </div>
 
-        <div className="p-4">
-          <span className="time">{hours}</span>
-          <span className="label"> Hours </span>
+        <div className="flex flex-col items-center">
+          <div className="flex gap-2">
+            {("0" + hours.toString())
+              .slice(-2)
+              .split("")
+              .map((char: string, i: number) => (
+                <div className="p-4 bg-pet-teal rounded-lg" key={`hours-${i}`}>
+                  <span>{char}</span>
+                </div>
+              ))}
+          </div>
+
+          <span className="text-slate-800">hours</span>
         </div>
 
-        <div className="p-4">
-          <span className="time"> {minutes} </span>
-          <span className="label"> Minutes </span>
+        <div className="flex flex-col items-center">
+          <div className="flex gap-2">
+            {("0" + minutes.toString())
+              .slice(-2)
+              .split("")
+              .map((char: string, i: number) => (
+                <div className="p-4 bg-pet-teal rounded-lg" key={`minutes-${i}`}>
+                  <span>{char}</span>
+                </div>
+              ))}
+          </div>
+
+          <span className="text-slate-800">minutes</span>
         </div>
 
-        <div className="p-4">
-          <span className="time">{seconds}</span>
-          <span className="label"> Seconds </span>
+        <div className="flex flex-col items-center">
+          <div className="flex gap-2">
+            {("0" + seconds.toString())
+              .slice(-2)
+              .split("")
+              .map((char: string, i: number) => (
+                <div className="p-4 bg-pet-teal rounded-lg" key={`seconds-${i}`}>
+                  <span>{char}</span>
+                </div>
+              ))}
+          </div>
+
+          <span className="text-slate-800">seconds</span>
         </div>
       </div>
     </div>
