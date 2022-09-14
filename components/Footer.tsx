@@ -101,7 +101,7 @@ export default function Footer() {
 
             <div className="flex items-center justify-center gap-3 text-4xl">
                 <a
-                    href=""
+                    href="https://www.linkedin.com/company/pethacks/"
                     className="text-[#0A66C2] hover:text-[#0A66C2]/75 active:text-[#0A66C2]/50 duration-200"
                     target="_blank"
                     rel="noreferrer"
@@ -121,7 +121,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                    href=""
+                    href="https://www.instagram.com/pethacks23/"
                     target="_blank"
                     rel="noreferrer"
                     title="Instagram"
