@@ -2,16 +2,15 @@ import {useEffect,useState} from 'react'
 import {NextPage} from 'next'
 
 
-export default function Timer() {
+export default function CountdownTimer() {
     const [partyTime, setPartyTime] = useState(false)
 
-    const [days, setDays ]= useState(0)
+    const [days, setDays]= useState(0)
     const [hours, setHours] = useState(0)
     const [minutes, setMinutes] = useState(0)
     const [seconds, setSeconds] = useState(0)
 
     useEffect(() =>{
-
         const target = new Date("01/6/2023 23:59:59")
 
         const interval = setInterval(()=>{

@@ -9,7 +9,7 @@ import Hero from '@components/Home/Hero'
 
 import Navbar from "@components/Navbar"
 import About from '@components/Home/About'
-import Timer from '@components/Home/Timer'
+import CountdownTimer from '@components/Home/CountdownTimer'
 
 interface HomeProps {
   faq: FrequentlyAskedQuestion[],
@@ -44,7 +44,7 @@ const Home: NextPage<HomeProps> = ({ faq, sponsors }) => {
       <About />
       <FAQ faq={faq} />
       <Sponsors sponsors={sponsors} />
-      <Timer/>
+      <CountdownTimer />
     </Layout>
   )
 }
