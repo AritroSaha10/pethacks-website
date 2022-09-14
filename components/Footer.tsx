@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 import axios from 'axios'
 
@@ -122,12 +122,11 @@ export default function Footer() {
 
                 <a
                     href=""
-                    className=" text-[#fff] hover:text-[#F77737]/75 active:text-[#F77737]/50 duration-200 bg-gradient-to-r from-[#B706E0] via-[#F5BD01] to-[#F5008E] rounded-lg"
                     target="_blank"
                     rel="noreferrer"
                     title="Instagram"
                 >
-                    <FaInstagram/>
+                    <Image width={30} height={30} src={InstagramLogo} alt="instagram logo" />
                 </a>
             </div>
 
