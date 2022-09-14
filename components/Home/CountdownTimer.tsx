@@ -1,71 +1,68 @@
-import {useEffect,useState} from 'react'
-import {NextPage} from 'next'
-
+import { useEffect, useState } from "react";
 
 export default function CountdownTimer() {
-    const [partyTime, setPartyTime] = useState(false)
+  const [partyTime, setPartyTime] = useState(false);
 
-    const [days, setDays]= useState(0)
-    const [hours, setHours] = useState(0)
-    const [minutes, setMinutes] = useState(0)
-    const [seconds, setSeconds] = useState(0)
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
-    useEffect(() =>{
-        const target = new Date("01/6/2023 23:59:59")
+  useEffect(() => {
+    const target = new Date("01/6/2023 23:59:59");
 
-        const interval = setInterval(()=>{
-        const now = new Date()
-        const difference = target.getTime() - now.getTime()
-        
-        const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-        setDays(d);
+    const interval = setInterval(() => {
+      const now = new Date();
+      const difference = target.getTime() - now.getTime();
 
-        const h = Math.floor((difference % ( 1000 * 60 * 60 * 24)) / (1000* 60 *60))
-        setHours(h);
+      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+      setDays(d);
 
-        const m = Math.floor((difference % (1000 * 60 * 60 )) / (1000* 60 ))  
-        setMinutes(m);
-    
-        const s = Math.floor((difference% (1000 * 60 )) / (1000))
-        setSeconds(s);
+      const h = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      setHours(h);
 
-        if (d <= 0 && h <= 0 && m <= 0 && s <= 0 ) {
-            setPartyTime(true)
-        }
-    },1000)
+      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      setMinutes(m);
 
-        return ()=>clearInterval(interval)
-    },[])
+      const s = Math.floor((difference % (1000 * 60)) / 1000);
+      setSeconds(s);
 
-    return (
+      if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
+        setPartyTime(true);
+      }
+    }, 1000);
 
-    <div className = 'border-2 p-10 rounded-xl'>
-        <div className = ' p-9 text-5xl font-bold text-center underline'>countdown</div>
-        <div className = 'text-center flex flex-row p-4'>
-            <div className = 'p-4'>
-                <span className = 'time'>{days}</span>
-                <span className = 'label'> Days </span>
-            </div>
+    return () => clearInterval(interval);
+  }, []);
 
-            <div className = 'p-4'>
-                <span className = 'time'>{hours}</span>
-                <span className = 'label'> Hours </span>
-            </div>
-            
-            <div className = 'p-4'>
-                <span className = 'time'> {minutes} </span>
-                <span className = 'label'> Minutes </span>
-            </div>
-
-            <div className = 'p-4'>
-                <span className = 'time'>{seconds}</span>
-                <span className = 'label'> Seconds </span>
-            </div>
+  return (
+    <div className="border-2 p-10 rounded-xl">
+      <div className=" p-9 text-5xl font-bold text-center underline">
+        countdown
+      </div>
+      <div className="text-center flex flex-row p-4">
+        <div className="p-4">
+          <span className="time">{days}</span>
+          <span className="label"> Days </span>
         </div>
 
+        <div className="p-4">
+          <span className="time">{hours}</span>
+          <span className="label"> Hours </span>
+        </div>
+
+        <div className="p-4">
+          <span className="time"> {minutes} </span>
+          <span className="label"> Minutes </span>
+        </div>
+
+        <div className="p-4">
+          <span className="time">{seconds}</span>
+          <span className="label"> Seconds </span>
+        </div>
+      </div>
     </div>
-    
-)
-} 
-
-
+  );
+}
