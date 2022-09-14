@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function CountdownTimer() {
@@ -80,7 +81,10 @@ export default function CountdownTimer() {
               .slice(-2)
               .split("")
               .map((char: string, i: number) => (
-                <div className="p-4 bg-pet-teal rounded-lg" key={`minutes-${i}`}>
+                <div
+                  className="p-4 bg-pet-teal rounded-lg"
+                  key={`minutes-${i}`}
+                >
                   <span>{char}</span>
                 </div>
               ))}
@@ -95,7 +99,10 @@ export default function CountdownTimer() {
               .slice(-2)
               .split("")
               .map((char: string, i: number) => (
-                <div className="p-4 bg-pet-teal rounded-lg" key={`seconds-${i}`}>
+                <div
+                  className="p-4 bg-pet-teal rounded-lg"
+                  key={`seconds-${i}`}
+                >
                   <span>{char}</span>
                 </div>
               ))}
@@ -104,6 +111,12 @@ export default function CountdownTimer() {
           <span className="text-slate-800">seconds</span>
         </div>
       </div>
+
+      <Link href="/sign-up">
+        <a className="px-4 py-2 bg-orange-500 hover:bg-orange-700 hover:text-white duration-75 transition-all text-2xl rounded-lg font-semibold">
+          Sign Up
+        </a>
+      </Link>
     </div>
   );
 }
