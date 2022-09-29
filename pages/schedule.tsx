@@ -97,7 +97,7 @@ const eventData = [
     }
 ]
 
-const ScheduleComponent: FC<{ scheduleIdx: number }> = ({ scheduleIdx }) => {
+const ScheduleComponent: React.FC<{ scheduleIdx: number }> = ({ scheduleIdx }) => {
     const dayScheduleData = eventData[scheduleIdx];
 
     const intervals = generateTimeIntervals(
