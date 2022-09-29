@@ -19,7 +19,7 @@ export default function About() {
                 >
                     <h1 className="pt-4 text-gray-800 font-bold text-3xl md:text-6xl underline">about us</h1>
                     <p className="mt-4 w-full md:w-3/4 text-2xl text-gray-700">
-                        Pethacks is a 36-hour student-led hackathon wanting to bring light to the cute furry animals that everyone loves! We invite you to create a project to show your love for pets and animals!</p>
+                        PetHacks is a 36-hour student-led hackathon wanting to bring light to the cute furry animals that everyone loves! We invite you to create a project to show your love for pets and animals!</p>
                     <p className='mt-4 w-full md:w-3/4 text-2xl text-gray-700'>
                         We welcome all highschool students and beyond, to join us at the hackathon on [date].                </p>
                 </div>

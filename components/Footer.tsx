@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 import axios from 'axios'
 
@@ -8,7 +8,7 @@ import EmailRegex from '@util/EmailRegex'
 
 import logo from '@media/logo.png'
 import InstagramLogo from "@media/ig.png"
-import { FaLinkedin, FaDiscord } from 'react-icons/fa'
+import { FaLinkedin, FaDiscord, FaInstagram } from 'react-icons/fa'
 
 const buttonColoring =
     'bg-emerald-700 text-white hover:bg-white hover:text-emerald-700 active:bg-emerald-500 active:text-white transition-all duration-300'
@@ -101,7 +101,7 @@ export default function Footer() {
 
             <div className="flex items-center justify-center gap-3 text-4xl">
                 <a
-                    href=""
+                    href="https://www.linkedin.com/company/pethacks/"
                     className="text-[#0A66C2] hover:text-[#0A66C2]/75 active:text-[#0A66C2]/50 duration-200"
                     target="_blank"
                     rel="noreferrer"
@@ -121,13 +121,12 @@ export default function Footer() {
                 </a>
 
                 <a
-                    href=""
-                    className="text-[#F77737] hover:text-[#F77737]/75 active:text-[#F77737]/50 duration-200"
+                    href="https://www.instagram.com/pethacks23/"
                     target="_blank"
                     rel="noreferrer"
                     title="Instagram"
                 >
-                    <Image src={InstagramLogo} width={30} height={30} alt="instagram" />
+                    <Image width={30} height={30} src={InstagramLogo} alt="instagram logo" />
                 </a>
             </div>
 
