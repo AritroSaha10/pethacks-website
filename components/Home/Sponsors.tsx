@@ -42,6 +42,7 @@ export default function Sponsors({ sponsors }: { sponsors: SponsorList }) {
             </div>
 
             <div className='flex flex-col gap-12 w-full items-center'>
+                <p className="text-xl font-semibold text-gray-700">coming soon :&#41;</p>
                 {sponsors.gold.length > 0 && (
                     <div className='flex flex-wrap gap-6 lg:gap-12 items-center justify-center'>
                         {sponsors.gold.map((data: SponsorData) => <SponsorCard {...data} key={data.name} imageHeight={140} />)}

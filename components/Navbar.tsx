@@ -19,6 +19,7 @@ const links = [
         id: "team",
         priority: false
     },
+    /*
     {
         name: "Prizes",
         link: "/prizes",
@@ -37,6 +38,7 @@ const links = [
         id: "sign-up",
         priority: true
     },
+    */
 ];
 
 export default function Header() {

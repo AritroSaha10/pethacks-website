@@ -21,7 +21,7 @@ export default function About() {
                     <p className="mt-4 w-full md:w-3/4 text-2xl text-gray-700">
                         PetHacks is a 36-hour student-led hackathon wanting to bring light to the cute furry animals that everyone loves! We invite you to create a project to show your love for pets and animals!</p>
                     <p className='mt-4 w-full md:w-3/4 text-2xl text-gray-700'>
-                        We welcome all highschool students and beyond, to join us at the hackathon on [date].                </p>
+                        We welcome all highschool students and beyond, to join us at the hackathon this year.                </p>
                 </div>
 
                 <div
